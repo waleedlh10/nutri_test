@@ -1,0 +1,381 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.top_bar_container {
+  /* padding: 20px 20px; */
+}
+
+.top_bar_container nav {
+  border-radius: 15px;
+}
+
+.break {
+  height: 1em;
+  width: 2px;
+  background: #4f4f4f;
+}
+
+.top_bar_container .button {
+  background-color: #3f4041;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  width: 2em;
+  cursor: pointer;
+}
+
+.interval_propositions {
+  overflow: scroll;
+}
+
+.interval_proposition {
+  font-size: smaller;
+  border: 1px solid #252525;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.interval_proposition.active {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+.interval_proposition:hover {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+.bg_primary {
+  background-color: #252525;
+}
+
+.btn_primary {
+  background-color: #252525;
+  color: #fff;
+}
+
+.btn_primary:hover {
+  background-color: #323232;
+  color: #fff;
+}
+
+.interval .dropdown-toggle {
+  border: 1px solid;
+  min-width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.interval .break {
+  height: 1em;
+  width: 2px;
+  background: #4f4f4f;
+}
+
+.stats_container {
+  min-width: 40%;
+  max-width: 50%;
+}
+
+.stats_container .window_container {
+}
+
+.stats_container .window_container .window {
+  background-color: #252525;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.stats_container .window_container .window > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats_container .window_container .window > div > div {
+  display: flex;
+  padding: 20px 25px;
+  align-items: center;
+}
+
+.stats_container .window_container .window > div > div .icon {
+  padding: 7px 11px;
+  background: #ffffff;
+  color: #252525;
+  border-radius: 10px;
+}
+
+.stats_container .window_container .window > div > div .window_title {
+  color: #fff;
+  padding: 0 15px;
+  text-wrap: nowrap;
+}
+
+.stats_container .window_container .window > div hr {
+  border: 1px solid #fff;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.stats_container .window_container .window > div .window_body {
+  color: #fff;
+}
+
+.donat_chart_container .window {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 10px auto 0px auto;
+  border: 1px solid;
+}
+
+.donat_chart_container .window > div .window_title {
+  font-size: x-small;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.statistics_chart_container {
+}
+
+.statistics_chart_container .window {
+  flex: 1;
+  border-radius: 20px;
+  background-color: #252525;
+  margin: 10px auto;
+  border: 1px solid;
+}
+
+.statistics_chart_container .window > div .window_title {
+  font-size: medium;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.table_container {
+  height: 100%;
+}
+
+.table_container .window {
+  flex: 1;
+  padding: 10px 0 0px 0;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: auto;
+  border: 1px solid;
+  height: 100%;
+}
+
+.table_container .window > div .window_title {
+  font-size: medium;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.page-link:focus {
+  box-shadow: 0 0 0 0.25rem #00000040;
+  color: #252525 !important;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 0.25rem #00000040 !important;
+  border-color: #00000040 !important;
+}
+
+.tab_select {
+  background: #ededed;
+  border-radius: 10px;
+  font-size: smaller;
+}
+
+.tab_select .tab {
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: x-small;
+}
+
+.tab_select .tab.active {
+  background-color: #ffffff;
+  cursor: auto;
+}
+
+.forms_window .form {
+  padding: 10px 30px;
+}
+
+.forms_window {
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.bg_hider {
+  width: 100%;
+  height: 100vh;
+  background-color: #252525d1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+}
+
+.my_modal {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1.6s !important;
+  background-color: #252525;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100000;
+}
+.my_modal.s {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.blob {
+  width: 2rem;
+  height: 2rem;
+  background: rgba(230, 230, 230, 0.85);
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 1rem);
+  top: calc(50% - 1rem);
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.25);
+}
+
+.loader_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background: radial-gradient(#111, #000);
+  opacity: 0;
+  transition: all 0.7s;
+  pointer-events: none;
+}
+
+.loader_bg.s {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.blob {
+  z-index: 1001;
+}
+
+.blob-2 {
+  animation: animate-to-2 1.5s infinite;
+}
+.blob-3 {
+  animation: animate-to-3 1.5s infinite;
+}
+.blob-1 {
+  animation: animate-to-1 1.5s infinite;
+}
+.blob-4 {
+  animation: animate-to-4 1.5s infinite;
+}
+.blob-0 {
+  animation: animate-to-0 1.5s infinite;
+}
+.blob-5 {
+  animation: animate-to-5 1.5s infinite;
+}
+
+@keyframes animate-to-2 {
+  25%,
+  75% {
+    transform: translateX(-1.5rem) scale(0.75);
+  }
+  95% {
+    transform: translateX(0rem) scale(1);
+  }
+}
+
+@keyframes animate-to-3 {
+  25%,
+  75% {
+    transform: translateX(1.5rem) scale(0.75);
+  }
+  95% {
+    transform: translateX(0rem) scale(1);
+  }
+}
+
+@keyframes animate-to-1 {
+  25% {
+    transform: translateX(-1.5rem) scale(0.75);
+  }
+  50%,
+  75% {
+    transform: translateX(-4.5rem) scale(0.6);
+  }
+  95% {
+    transform: translateX(0rem) scale(1);
+  }
+}
+
+@keyframes animate-to-4 {
+  25% {
+    transform: translateX(1.5rem) scale(0.75);
+  }
+  50%,
+  75% {
+    transform: translateX(4.5rem) scale(0.6);
+  }
+  95% {
+    transform: translateX(0rem) scale(1);
+  }
+}
+
+@keyframes animate-to-0 {
+  25% {
+    transform: translateX(-1.5rem) scale(0.75);
+  }
+  50% {
+    transform: translateX(-4.5rem) scale(0.6);
+  }
+  75% {
+    transform: translateX(-7.5rem) scale(0.5);
+  }
+  95% {
+    transform: translateX(0rem) scale(1);
+  }
+}
+
+@keyframes animate-to-5 {
+  25% {
+    transform: translateX(1.5rem) scale(0.75);
+  }
+  50% {
+    transform: translateX(4.5rem) scale(0.6);
+  }
+  75% {
+    transform: translateX(7.5rem) scale(0.5);
+  }
+  95% {
+    transform: translateX(0rem) scale(1);
+  }
+}
