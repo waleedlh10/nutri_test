@@ -89,4 +89,8 @@ To start the application, run the following commands in separate terminal window
 - The API documentation is accessible through Swagger, which is pre-set in the backend. Use Swagger to view and test the available API endpoints.
 - You can access the Swagger UI at: `http://localhost:8000/swagger/`
 
+## 5. Note
+
+![Project Screenshot](screenshot.png)
+
 - This project serves as a proof of concept, demonstrating the feasibility of developing a web application using Django and React within a 48-hour timeframe.
